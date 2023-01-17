@@ -1,16 +1,9 @@
 # flutter_application_1
 
-A new Flutter project.
+A new Flutter project.  
+플러터 프로젝트를 생성하여 개발환경 구축 확인 및 iOS 애뮬레이터, 안드로이드 시뮬레이터 구동을 확인하였습니다.
 
-## Getting Started
+## 이름 추천 모바일 어플리케이션 프로젝트
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+무작위로 영단어 두개를 골라 합침으로써 플젝 이름을 정할때 도움이 될 수 있도록 하는 모바일 어플리케이션이다.  
+기본적인 플러터 프레임워크의 로직을 이해하고 라이브러리를 사용하는 방법 등을 익히기 위한 프로젝트이다.
