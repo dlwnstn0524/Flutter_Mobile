@@ -5,21 +5,33 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "레이아웃 익히기",
-      home: LayoutExample(),
-    );
+    return MaterialApp(title: "Column 위젯 정렬", home: ColumnExample());
   }
 }
 
-class LayoutExample extends StatelessWidget {
+class ColumnExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        color: Colors.blue,
-        child: Center(
-          child: Text("컨테이너1"),
+      body: SafeArea(
+        child: Column(
+          children: [
+            Container(
+              width: 100,
+              height: 100,
+              color: Colors.red,
+            ),
+            Container(
+              width: 100,
+              height: 100,
+              color: Colors.blue,
+            ),
+            Container(
+              width: 100,
+              height: 100,
+              color: Colors.green,
+            )
+          ],
         ),
       ),
     );
