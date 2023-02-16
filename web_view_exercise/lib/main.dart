@@ -1,5 +1,7 @@
+import 'dart:async';
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:web_view_exercise/src/navigation_controls.dart';
 import 'package:web_view_exercise/src/web_view_stack.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
@@ -19,13 +21,22 @@ class WebViewApp extends StatefulWidget {
 }
 
 class _WebViewAppState extends State<WebViewApp> {
+  final controller = Completer<WebViewController>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Flutter WebView'),
+        actions: [
+          NavigationControls(
+            controller: controller,
+          ),
+        ],
       ),
-      body: const WebViewStack(),
+      body: WebViewStack(
+        controller: controller,
+      ),
     );
   }
 }
